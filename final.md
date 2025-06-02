@@ -1,12 +1,11 @@
 # 最終課題
 
-
+[https://classroom.github.com/a/YYsh8aT_](https://classroom.github.com/a/YYsh8aT_)
 github classroomに準備しています．　　
 
-https://classroom.github.com/a/n0XLBaNv
 
 ## 提出期限
 
-2024年8月7日
+2025年8月8日
 
 
