@@ -7,7 +7,7 @@ int main() {
 
   cv::namedWindow("Display", cv::WINDOW_AUTOSIZE);
   
-  int blur = 100;  // 変化の度合い 1-10
+  int blur = 10;  // 変化の度合い 1-10
 
   cv::medianBlur(src, dst, blur * 2 + 1);
   cv::imshow("Display", dst);

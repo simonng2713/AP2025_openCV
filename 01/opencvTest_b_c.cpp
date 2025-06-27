@@ -10,8 +10,8 @@ int main()
   
     cv::namedWindow("Display", cv::WINDOW_AUTOSIZE);
     
-    double alpha = 0.1; // contrast 
-    double beta = 1.0; // brightness
+    double alpha = 0.5; // contrast 
+    double beta = 50; // brightness
      
     src.convertTo(dst, -1, alpha, beta);  
     cv::imshow("Display", dst);
