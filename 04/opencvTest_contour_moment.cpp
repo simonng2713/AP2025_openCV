@@ -54,6 +54,11 @@ int main() {
           Point2f mc = Point2f(mu.m10 / mu.m00, mu.m01 / mu.m00);
 
           circle(src, mc, 4, Scalar(0, 255, 0), 2, 4);
+          // Draw the coordinates as text
+          char buf[64];
+          snprintf(buf, sizeof(buf), "(%.0f, %.0f)", mc.x, mc.y);
+          putText(src, buf, Point(mc.x + 5, mc.y - 5), FONT_HERSHEY_SIMPLEX, 0.5,
+                  Scalar(0, 255, 0), 1, 4);
         }
       }
       imshow("movie", src);
