@@ -7,9 +7,9 @@ VideoCapture cap;
 
 void on_tracker(int p, void *) { cap.set(CAP_PROP_POS_FRAMES, p); }
 
-double B_MAX = 50;
+double B_MAX = 250;
 double B_MIN = 0;
-double G_MAX = 50;
+double G_MAX = 250;
 double G_MIN = 0;
 double R_MAX = 250;
 double R_MIN = 100;

@@ -32,10 +32,10 @@ int main() {
     if (playing && cap.read(src)) {
       cvtColor(src, gray, COLOR_BGR2GRAY);
       absdiff(gray, back, diff);
-      threshold(diff, mask, thresh, 255, THRESH_BINARY);
+      threshold(diff, mask, thresh, 255, THRESH_BINARY); // Frames with motion are white (255)
 
       Mat dst;
-      src.copyTo(dst, mask);
+      src.copyTo(dst, mask); // Copy all the pixels from src where mask is white correspondingly
 
       imshow("movie", dst);
     }
