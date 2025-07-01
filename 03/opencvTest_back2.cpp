@@ -24,7 +24,7 @@ int main() {
   }
 
   Mat src, dst, back, segm;
-  namedWindow("movie", WINDOW_GUI_EXPANDED);
+  namedWindow("movie", WINDOW_KEEPRATIO);
   setWindowProperty("movie", WND_PROP_TOPMOST, 1);
   createTrackbar("pos", "movie", nullptr, (int)cap.get(CAP_PROP_FRAME_COUNT),
                  on_tracker);
